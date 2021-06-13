@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'SimplySweet';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url('../fonts/SimplySweet/main/OTF/SimplySweet_Script_regular.otf') format('opentype'),
+    url('../fonts/SimplySweet/main/TTF/SimplySweet_Script_regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SimplySweetAlt';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url('../fonts/SimplySweet/extra/OTF/SimplySweet_Script_regular_alt.otf') format('opentype'),
+    url('../fonts/SimplySweet/extra/TTF/SimplySweet_Script_regular_alt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SimplySweetSerif';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url('../fonts/SimplySweet/main/OTF/SimplySweet_Serif.otf') format('opentype'),
+    url('../fonts/SimplySweet/main/TTF/SimplySweet_Serif.ttf') format('truetype');
+}
+
+.simply-sweet {
+    font-family: 'SimplySweet';
+}
+
+.simply-sweet-alt {
+    font-family: 'SimplySweetAlt';
+}
+
+.simply-sweet-serif {
+    font-family: 'SimplySweetSerif';
+}
