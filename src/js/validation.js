@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function Validation() {
 
         console.log(month, day)
         if(correctMonth === month * 1 && correctDay=== day * 1) {
-            const message = 'PERDISTE A TU FUTURO NOVIO';
+            const message = 'ME ENOJASTE';
             const iconClass = 'ambulance';
 
             $(setModalMessage(message, iconClass))
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function Validation() {
                         setTimeout(() => {
                             $(setModalMessage(message, iconClass))
                             .modal({
-                                onApprove: ()=>location.assign('/happy-birthday.html')
+                                onApprove: ()=>location.assign('/pregunta.html')
                             })
                             .modal('show');
                         }, 0);
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function Validation() {
                 .modal('show');
         } else if (countOpportunities > 0) {
             countOpportunities--;
-            const message = `Tenés una oportunidad más para recuperar a tu futuro novio`;
+            const message = `Tenés una oportunidad más y no me enojo`;
             const iconClass = 'meh outline';
 
             $(setModalMessage(message, iconClass))
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function Validation() {
 
             $(setModalMessage(message, iconClass))
                 .modal({
-                    onApprove: () => location.assign('/happy-birthday.html')
+                    onApprove: () => location.assign('/pregunta.html')
                 })
                 .modal('show');
         }

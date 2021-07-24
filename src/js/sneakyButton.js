@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const sneakyButtons = document.getElementsByClassName('sneakyButton');
     const acceptButton = document.querySelector('.acceptBtn');
     const form = document.querySelector('.pregunta form');
-    form.appendChild
+    // form.appendChild
     if(form) form.addEventListener('submit', onSubmit);
 
-    if(acceptButton) {
-        acceptButton.addEventListener('click', onClickAccept)
-    }
+    // if(acceptButton) {
+    //     acceptButton.addEventListener('click', onClickAccept)
+    // }
 
     for (const sneakyButton of sneakyButtons) {
         sneakyButton.addEventListener('click', goSneaky);
@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     function onClickAccept(e) {
         location.assign('/si.html')
-        console.log("hoa")
     }
     
     function goSneaky({currentTarget}) {
